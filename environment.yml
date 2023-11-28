@@ -43,4 +43,4 @@ dependencies:
       - tqdm==4.66.1
       - typing-extensions==4.8.0
       - urllib3==2.1.0
-prefix: ./VAANI.EXE
+prefix: ./VAANI_ENV

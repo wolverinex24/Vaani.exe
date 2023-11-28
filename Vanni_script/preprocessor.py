@@ -2,7 +2,7 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 # import string
-
+# if you are using jio ISP change network and run the code  and then after running 1st time just comment below code if nltk server connection isusse
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
@@ -22,7 +22,7 @@ def preprocess_sentence(sentence):
 
     # Remove stop words based on their impact in the sentence
     stop_words = set(stopwords.words('english'))
-    meaningful_words = [word for word in words if word.lower() not in stop_words or word.lower() in ['my', 'your', 'his', 'her', 'its', 'our', 'their', 'who', 'are', 'you','out']]
+    meaningful_words = [word for word in words if word.lower() not in stop_words or word.lower() in ['my', 'your', 'his', 'her','how', 'its', 'our', 'their', 'who', 'are', 'you','out']]
    
     # Split each word into characters, convert to uppercase, and join with commas
     characters_list = [word.upper() for word in meaningful_words]
