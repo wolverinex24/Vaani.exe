@@ -1,7 +1,8 @@
 # Vaani: Text to Indian Sign Language Converter
 
-![Vaani Logo]([https://example.com/vaani-logo.png](https://github.com/wolverinex24/Vaani.exe/assets/72180769/b33ced3d-80cf-4689-ae22-df9216419756))
+![Vaani Logo]
 <img width="371" alt="Screenshot 2023-11-28 at 5 37 53 PM" src="https://github.com/wolverinex24/Vaani.exe/assets/72180769/b33ced3d-80cf-4689-ae22-df9216419756">
+<img width="371" alt="Screenshot 2023-11-28 at 5 52 22 PM" src="https://github.com/wolverinex24/Vaani.exe/assets/72180769/920e5d1a-e5c6-4c44-8269-60c262d8acae">
 
 ## Overview
 
