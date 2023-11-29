@@ -194,11 +194,15 @@ class VaaniApp(QMainWindow):
         self.layout.addWidget(self.label, alignment=Qt.AlignCenter)
 
         self.entry = QLineEdit(self)
-        self.layout.addWidget(self.entry)
+        self.entry.setFixedWidth(500)
+
+        self.entry.setStyleSheet("font-size: 16px; padding: 8px;")
+        self.layout.addWidget(self.entry, alignment=Qt.AlignCenter)
 
         # Submit Button
         self.button_submit = QPushButton("Submit", self)
         self.button_submit.setStyleSheet("background-color: #4169E1; color: white; font-weight: bold;")  # Royal Blue color
+        self.button_submit.setFixedHeight(30)
         self.button_submit.setFixedWidth(150)  # Fixed width
         self.button_submit.clicked.connect(self.submit_data)
         self.layout.addWidget(self.button_submit, alignment=Qt.AlignCenter)
@@ -206,7 +210,7 @@ class VaaniApp(QMainWindow):
         # Browse Button
         self.button_browse = QPushButton("Browse GIF", self)
         self.button_browse.setStyleSheet("background-color: #FF6347; color: white; font-weight: bold;")  # Tomato color
-        self.button_browse.setFixedWidth(150)  # Fixed width
+        self.button_browse.setFixedWidth(140)  # Fixed width
         self.button_browse.clicked.connect(self.browse_gif)
         self.layout.addWidget(self.button_browse, alignment=Qt.AlignCenter)
 
@@ -238,7 +242,8 @@ class VaaniApp(QMainWindow):
         # Play/Pause Button
         self.button_play_pause = QPushButton("Play/Pause", self)
         self.button_play_pause.setStyleSheet("background-color: #FFD700; color: black; font-weight: bold;")  # Gold color
-        self.button_play_pause.setFixedWidth(150)  # Fixed width
+        self.button_play_pause.setFixedHeight(40)
+        self.button_play_pause.setFixedWidth(160)  # Fixed width
         self.button_play_pause.clicked.connect(self.toggle_animation)
         self.layout.addWidget(self.button_play_pause, alignment=Qt.AlignCenter)
 
