@@ -34,9 +34,7 @@ def preprocess_sentence(sentence):
     return characters_list
 
 # Get input from the user
-# user_input = input("Enter a sentence: ")
-# output_result = preprocess_sentence(user_input)
-# print("Processed Result:", output_result)
+
 
 def wordPreproccessor(glosses):
     
