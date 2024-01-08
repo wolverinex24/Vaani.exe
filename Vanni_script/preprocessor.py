@@ -52,7 +52,7 @@ def wordPreproccessor(glosses):
                 gen=ord(j)-65
                 userInput.append( int(gen+baseValue) ) 
             else:
-                userInput.append(int(j)) 
+                userInput.append(int(j)+1) 
     return userInput
 def inverseWordpreproccessor(index):
     baseValue=10
