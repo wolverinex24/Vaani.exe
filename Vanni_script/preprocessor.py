@@ -34,9 +34,7 @@ def preprocess_sentence(sentence):
     return characters_list
 
 # Get input from the user
-# user_input = input("Enter a sentence: ")
-# output_result = preprocess_sentence(user_input)
-# print("Processed Result:", output_result)
+
 
 def wordPreproccessor(glosses):
     
@@ -44,7 +42,7 @@ def wordPreproccessor(glosses):
     # print(f"ASCII values for '{word}': {ascii_values}")
     userInput=[]
    
-    baseValue=10
+    baseValue=11
     for i in glosses:
         for j in i:
             
@@ -52,11 +50,11 @@ def wordPreproccessor(glosses):
                 gen=ord(j)-65
                 userInput.append( int(gen+baseValue) ) 
             else:
-                userInput.append(int(j)) 
+                userInput.append(int(j)+1) 
     return userInput
 def inverseWordpreproccessor(index):
-    baseValue=10
-    if (index>=10):
+    baseValue=11
+    if (index>=11):
         character=(index-baseValue)+65
     else:
         character=index

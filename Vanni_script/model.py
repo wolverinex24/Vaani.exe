@@ -32,7 +32,7 @@ class Model:
     def __init__(self):
         # Load the saved generator model
         self.generator = Generator(self.Z_DIM, self.CHANNELS_IMG, self.FEATURES_GEN, self.NUM_CLASSES, self.IMG_SIZE, self.GEN_EMBEDDING).to(self.device)
-        self.generator.load_state_dict(torch.load("Vanni_script\\generator.pth",map_location=torch.device('cpu')))
+        self.generator.load_state_dict(torch.load("Vanni_script/vaani_models/100generatorX.pth",map_location=torch.device('cpu')))
         self.generator.eval()  # Set the generator in evaluation mode
 
     
@@ -88,8 +88,8 @@ class Model:
             
                 
                 # result = sr.upsample(image) #using SR method 
-                # cv2.resize(image,dsize=None,fx=4,fy=4)
-                result = image
+                result=cv2.resize(image,dsize=None,fx=2,fy=2)
+               
                 
                 # Generate the filename for the upscaled image
                 upscale_image_filename = os.path.join(upscale_directory, f"{sequential_number+idx}.png")
