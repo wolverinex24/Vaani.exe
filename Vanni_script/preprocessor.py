@@ -42,7 +42,7 @@ def wordPreproccessor(glosses):
     # print(f"ASCII values for '{word}': {ascii_values}")
     userInput=[]
    
-    baseValue=10
+    baseValue=11
     for i in glosses:
         for j in i:
             
@@ -53,8 +53,8 @@ def wordPreproccessor(glosses):
                 userInput.append(int(j)+1) 
     return userInput
 def inverseWordpreproccessor(index):
-    baseValue=10
-    if (index>=10):
+    baseValue=11
+    if (index>=11):
         character=(index-baseValue)+65
     else:
         character=index
